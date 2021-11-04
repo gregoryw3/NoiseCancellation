@@ -17,6 +17,8 @@
 		F3C1AFD727335F1400F113EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C1AFAD27335F1300F113EE /* ContentView.swift */; };
 		F3C1AFD827335F1400F113EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3C1AFAE27335F1400F113EE /* Assets.xcassets */; };
 		F3C1AFD927335F1400F113EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3C1AFAE27335F1400F113EE /* Assets.xcassets */; };
+		F3C1AFE9273362EB00F113EE /* MicrophoneMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C1AFE8273362EB00F113EE /* MicrophoneMonitor.swift */; };
+		F3C1AFEA273362EB00F113EE /* MicrophoneMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C1AFE8273362EB00F113EE /* MicrophoneMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		F3C1AFCC27335F1400F113EE /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C1AFD027335F1400F113EE /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		F3C1AFD227335F1400F113EE /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		F3C1AFE8273362EB00F113EE /* MicrophoneMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,7 @@
 			children = (
 				F3C1AFAC27335F1300F113EE /* NoiseCancellationApp.swift */,
 				F3C1AFAD27335F1300F113EE /* ContentView.swift */,
+				F3C1AFE8273362EB00F113EE /* MicrophoneMonitor.swift */,
 				F3C1AFAE27335F1400F113EE /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -301,6 +305,7 @@
 			files = (
 				F3C1AFD627335F1400F113EE /* ContentView.swift in Sources */,
 				F3C1AFD427335F1400F113EE /* NoiseCancellationApp.swift in Sources */,
+				F3C1AFE9273362EB00F113EE /* MicrophoneMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +315,7 @@
 			files = (
 				F3C1AFD727335F1400F113EE /* ContentView.swift in Sources */,
 				F3C1AFD527335F1400F113EE /* NoiseCancellationApp.swift in Sources */,
+				F3C1AFEA273362EB00F113EE /* MicrophoneMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -451,6 +458,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -468,6 +476,7 @@
 				DEVELOPMENT_TEAM = KQ8J5D3R22;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need to Use Mic";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -499,6 +508,7 @@
 				DEVELOPMENT_TEAM = KQ8J5D3R22;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need to Use Mic";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
